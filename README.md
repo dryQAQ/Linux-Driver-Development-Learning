@@ -1,12 +1,14 @@
 # Linux 驱动开发学习仓库
 
 <!-- 徽章区 -->
+
 [![Stars](https://img.shields.io/github/stars/yourusername/linux-driver-learning?style=social)](https://github.com/yourusername/linux-driver-learning)
 [![Forks](https://img.shields.io/github/forks/yourusername/linux-driver-learning?style=social)](https://github.com/yourusername/linux-driver-learning)
 [![License](https://img.shields.io/github/license/yourusername/linux-driver-learning)](LICENSE)
 [![Last Commit](https://img.shields.io/github/last-commit/yourusername/linux-driver-learning)](https://github.com/yourusername/linux-driver-learning/commits)
 
 <!-- 中文说明 -->
+
 > 从零开始学习 Linux 驱动开发，记录每一个学习脚印。本仓库将持续更新，涵盖从基础模块到高级驱动的完整学习路径。
 
 ## 📖 目录导航
@@ -132,13 +134,13 @@ linux-driver-learning/
 
 ## 🔧 环境要求
 
-| 项目 | 要求 |
-|------|------|
-| 操作系统 | Linux (Ubuntu 20.04+ / CentOS 8+ 测试通过) |
-| GCC | GCC 7.0+ |
-| Make | GNU Make 4.0+ |
-| 内核头文件 | `linux-headers-$(uname -r)` |
-| root 权限 | 加载/卸载模块需要 root 权限 |
+| 项目      | 要求                                     |
+| ------- | -------------------------------------- |
+| 操作系统    | Linux (Ubuntu 20.04+ / CentOS 8+ 测试通过) |
+| GCC     | GCC 7.0+                               |
+| Make    | GNU Make 4.0+                          |
+| 内核头文件   | `linux-headers-$(uname -r)`            |
+| root 权限 | 加载/卸载模块需要 root 权限                      |
 
 > ⚠️ **注意**: 不建议在生产环境直接编译和测试内核模块，请在虚拟机中进行。
 
@@ -149,6 +151,7 @@ linux-driver-learning/
 ### [01 - Hello World 模块](./examples/01-hello_module/)
 
 最简单的内核模块示例，演示：
+
 - 内核模块的基本结构
 - `module_init()` 和 `module_exit()` 的使用
 - `printk()` 内核日志输出
@@ -175,6 +178,7 @@ linux-driver-learning/
 ---
 
 <!-- 底部信息 -->
+
 <p align="center">
   <sub>如果你觉得这个仓库对你有帮助，请点个 ⭐ 支持一下！</sub>
 </p>

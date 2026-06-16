@@ -7,22 +7,26 @@
 本示例演示了以下核心概念：
 
 1. **内核模块基本结构**
+   
    - 头文件引入
    - 模块初始化函数 `hello_init()`
    - 模块退出函数 `hello_exit()`
    - `module_init()` 和 `module_exit()` 宏
 
 2. **内核日志输出**
+   
    - `printk()` 函数的使用
    - 日志级别 `KERN_INFO`
    - 查看日志：`dmesg` 命令
 
 3. **模块信息声明**
+   
    - `MODULE_LICENSE()` - 许可证声明（必须）
    - `MODULE_AUTHOR()` - 作者信息
    - `MODULE_DESCRIPTION()` - 模块描述
 
 4. **模块参数传递**
+   
    - `module_param()` 宏
    - 支持的参数类型
    - 权限掩码 `S_IRUGO`
@@ -81,16 +85,16 @@ module_exit(hello_exit);   // 注册退出函数
 
 ### printk 日志级别
 
-| 级别 | 宏定义 | 含义 |
-|------|--------|------|
-| 0 | KERN_EMERG | 系统不可用 |
-| 1 | KERN_ALERT | 需要立即处理 |
-| 2 | KERN_CRIT | 严重情况 |
-| 3 | KERN_ERR | 错误 |
-| 4 | KERN_WARNING | 警告 |
-| 5 | KERN_NOTICE | 正常但重要 |
-| 6 | KERN_INFO | 一般信息 |
-| 7 | KERN_DEBUG | 调试信息 |
+| 级别  | 宏定义          | 含义     |
+| --- | ------------ | ------ |
+| 0   | KERN_EMERG   | 系统不可用  |
+| 1   | KERN_ALERT   | 需要立即处理 |
+| 2   | KERN_CRIT    | 严重情况   |
+| 3   | KERN_ERR     | 错误     |
+| 4   | KERN_WARNING | 警告     |
+| 5   | KERN_NOTICE  | 正常但重要  |
+| 6   | KERN_INFO    | 一般信息   |
+| 7   | KERN_DEBUG   | 调试信息   |
 
 ### Makefile 工作原理
 

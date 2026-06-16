@@ -1,5 +1,0 @@
-安装：insmod hello.ko
-
-卸载：rmmod hello
-
-显示：dmesg -w
